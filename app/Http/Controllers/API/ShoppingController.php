@@ -95,7 +95,6 @@ class ShoppingController extends Controller
     public function destroy(Shopping $shopping)
     {
         $shopping->delete();
-
         return response()
         ->json([
             'shopping' => 'Data berhasil dihapus', ]);
